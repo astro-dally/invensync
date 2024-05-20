@@ -1,38 +1,97 @@
-.App {
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Item Selector styles */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[readonly] {
+  background-color: #e9ecef;
+}
+
+/* Button styles */
+button {
+  background-color: #0fbfeb;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0b96fa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* QR Scanner styles */
+#destinationInput {
+  cursor: pointer;
+}
+
+/* QR Code Generator styles */
+#qrCodeGeneratorContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#qrCodeGeneratorContainer h2 {
+  margin-bottom: 20px;
+}
+
+.react-hot-toast {
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  h1 {
+    font-size: 20px;
+  }
+  
+  label, select, input, button {
+    font-size: 14px;
   }
 }

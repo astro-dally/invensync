@@ -3,20 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "@testing-library/react": "^13.4.0",
     "@yudiel/react-qr-scanner": "^2.0.0-beta.3",
     "qrcode.react": "^3.1.0",
-    
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
-    
     "react-qr-scanner": "^1.0.0-alpha.11",
     "react-scripts": "^5.0.1",
     "react-webcam": "^7.2.0",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "to-words": "^4.0.1",
+    "web-vitals": "^4.0.0"
   },
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

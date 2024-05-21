@@ -69,8 +69,8 @@ const App = () => {
         units={units}
       />
       <QRScanner
-        selectedItem={selectedItem} // Passing the item name directly
-        items={items} // Passing all items to QRScanner
+        selectedItem={selectedItem}
+        items={items} 
       />
       <QRCodeGenerator />
     </div>

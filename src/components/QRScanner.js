@@ -67,7 +67,6 @@ const QRScanner = ({ selectedItem, items }) => {
 
       if (response.status === 200) {
         toast.success("Item submitted successfully!", { id: "success-toast" });
-        // Optionally, you can clear the form fields or reset the state here
       } else {
         throw new Error("Error submitting item");
       }
